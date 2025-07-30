@@ -1,0 +1,98 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 500;
+    margin: 30px 0;
+    color: #000;
+    font-size: 2rem;
+}
+
+.dining-options {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.option-card {
+    flex: 1;
+    min-width: 300px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.option-card:hover {
+    transform: translateY(-5px);
+}
+
+.option-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.option-content {
+    padding: 20px;
+}
+
+.option-title {
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.option-description {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.location-list {
+    margin-top: 20px;
+}
+
+.location-list h3 {
+    font-weight: 500;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.location-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.location-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.location-list li:last-child {
+    border-bottom: none;
+}
+
+@media (max-width: 768px) {
+    .dining-options {
+        flex-direction: column;
+    }
+    
+    .option-card {
+        margin-bottom: 20px;
+    }
+}

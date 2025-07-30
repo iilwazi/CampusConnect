@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusConnect - Lecture Dashboard</title>
+    <link rel="stylesheet" href="lecturer-dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Top Navigation -->
+        <div class="top-nav">
+            <div class="site-title">CampusConnect</div>
+            <div class="nav-tabs">
+                <a href="Teaching dashboard.html">Teaching</a>
+                <a href="Gradebook.html">Gradebook</a>
+                <a href="Communication.html">Communication</a>
+            </div>
+            <div class="user-profile">
+                <div class="profile-pic">P</div>
+                <button class="logout-btn" id="logout-btn">Logout</button>
+            </div>
+        </div>
+        
+        <!-- Welcome Section -->
+        <div class="welcome-section">
+            <h1 class="welcome-message">Welcome, Professor Johnson!</h1>
+            <p class="welcome-subtitle">Your teaching dashboard and tools</p>
+        </div>
+        
+        <!-- Stats Cards -->
+        <div class="stats-container">
+            <div class="stat-card">
+                <div class="stat-icon classes-icon">
+                    <i>🏫</i>
+                </div>
+                <div class="stat-info">
+                    <h3>Active Classes</h3>
+                    <p>4</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon students-icon">
+                    <i>👥</i>
+                </div>
+                <div class="stat-info">
+                    <h3>Total Students</h3>
+                    <p>142</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon grading-icon">
+                    <i>📝</i>
+                </div>
+                <div class="stat-info">
+                    <h3>To Grade</h3>
+                    <p>23</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon announce-icon">
+                    <i>📢</i>
+                </div>
+                <div class="stat-info">
+                    <h3>Announcements</h3>
+                    <p>2</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Left Column -->
+            <div class="left-column">
+                <h2 class="section-title">Your Courses</h2>
+                <div class="courses-container">
+                    <div class="course-card">
+                        <div class="course-header">
+                            <div class="course-icon">P</div>
+                            <div class="course-info">
+                                <h3>Python Programming</h3>
+                                <p>CS101 - 42 students</p>
+                            </div>
+                        </div>
+                        <div class="course-actions">
+                            <button class="action-btn manage-btn">Manage Class</button>
+                            <button class="action-btn grade-btn">Gradebook</button>
+                        </div>
+                    </div>
+                    
+                    <div class="course-card">
+                        <div class="course-header">
+                            <div class="course-icon">D</div>
+                            <div class="course-info">
+                                <h3>Data Structures</h3>
+                                <p>CS201 - 38 students</p>
+                            </div>
+                        </div>
+                        <div class="course-actions">
+                            <button class="action-btn manage-btn">Manage Class</button>
+                            <button class="action-btn grade-btn">Gradebook</button>
+                        </div>
+                    </div>
+                    
+                    <div class="course-card">
+                        <div class="course-header">
+                            <div class="course-icon">A</div>
+                            <div class="course-info">
+                                <h3>Advanced Algorithms</h3>
+                                <p>CS301 - 32 students</p>
+                            </div>
+                        </div>
+                        <div class="course-actions">
+                            <button class="action-btn manage-btn">Manage Class</button>
+                            <button class="action-btn grade-btn">Gradebook</button>
+                        </div>
+                    </div>
+                    
+                    <div class="course-card">
+                        <div class="course-header">
+                            <div class="course-icon">W</div>
+                            <div class="course-info">
+                                <h3>Web Development</h3>
+                                <p>CS210 - 30 students</p>
+                            </div>
+                        </div>
+                        <div class="course-actions">
+                            <button class="action-btn manage-btn">Manage Class</button>
+                            <button class="action-btn grade-btn">Gradebook</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <h2 class="section-title">Assignments to Grade</h2>
+                <div class="assignments-container">
+                    <div class="assignment-item">
+                        <div class="assignment-info">
+                            <h4>Python Project 1</h4>
+                            <p>CS101 - 12 submissions pending</p>
+                        </div>
+                        <div class="assignment-status">Due Yesterday</div>
+                    </div>
+                    <div class="assignment-item">
+                        <div class="assignment-info">
+                            <h4>Data Structures Quiz</h4>
+                            <p>CS201 - 38 submissions received</p>
+                        </div>
+                        <div class="assignment-status">Due Tomorrow</div>
+                    </div>
+                    <div class="assignment-item">
+                        <div class="assignment-info">
+                            <h4>Algorithms Problem Set</h4>
+                            <p>CS301 - 5 late submissions</p>
+                        </div>
+                        <div class="assignment-status">Grading Started</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right Column -->
+            <div class="right-column">
+                <h2 class="section-title">Upcoming Classes</h2>
+                <div class="classes-container">
+                    <div class="class-item">
+                        <h4>Python Programming - Lecture 8</h4>
+                        <p>Monday, October 25th, 10:00 AM</p>
+                        <p>Room: CSB-205</p>
+                    </div>
+                    <div class="class-item">
+                        <h4>Data Structures - Lab Session</h4>
+                        <p>Tuesday, October 26th, 2:00 PM</p>
+                        <p>Room: CSB-312</p>
+                    </div>
+                    <div class="class-item">
+                        <h4>Department Meeting</h4>
+                        <p>Wednesday, October 27th, 11:00 AM</p>
+                        <p>Room: Admin-102</p>
+                    </div>
+                </div>
+                
+                <div class="quick-actions">
+                    <div class="action-button">
+                        <div class="action-icon">
+                            <i>📢</i>
+                        </div>
+                        <div class="action-text">Post Announcement</div>
+                    </div>
+                    <div class="action-button">
+                        <div class="action-icon">
+                            <i>📤</i>
+                        </div>
+                        <div class="action-text">Upload Materials</div>
+                    </div>
+                    <div class="action-button">
+                        <div class="action-icon">
+                            <i>📊</i>
+                        </div>
+                        <div class="action-text">View Gradebook</div>
+                    </div>
+                    <div class="action-button">
+                        <div class="action-icon">
+                            <i>✉️</i>
+                        </div>
+                        <div class="action-text">Message Students</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('logout-btn').addEventListener('click', function() {
+            window.location.href = 'login page.html';
+        });
+    </script>
+</body>
+</html>

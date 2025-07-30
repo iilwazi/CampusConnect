@@ -1,0 +1,119 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Header Styles */
+.page-header {
+    background-color: #008080; /* Teal color */
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.page-header h1 {
+    font-weight: 500;
+    font-size: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Housing Container */
+.housing-container {
+    max-width: 1200px;
+    margin: 0 auto 3rem;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.housing-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.housing-options {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.housing-options h2 {
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    color: #008080; /* Teal color */
+    border-bottom: 2px solid #008080;
+    padding-bottom: 0.5rem;
+}
+
+.housing-list {
+    list-style: none;
+}
+
+.housing-list li {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.housing-list h3 {
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 0.3rem;
+}
+
+.housing-list p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Footer Styles */
+.page-footer {
+    text-align: right;
+    padding: 1rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.framer-btn {
+    padding: 0.5rem 1rem;
+    background-color: #008080;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.framer-btn:hover {
+    background-color: #006666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .housing-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .page-header h1 {
+        font-size: 1.5rem;
+    }
+}

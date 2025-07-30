@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="student dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container"> 
+        <!-- Navigation Bar -->
+        <nav class="top-nav">
+            <div class="site-title">Campus connect</div>
+            <div class="nav-tabs">
+                <a href="#" class="active">Dashboard</a>
+                <a href="campus navigation.html">Campus Navigation</a>
+            </div>
+            <div class="user-profile">
+                <div class="profile-pic">J</div>
+                <button class="logout-btn">Logout</button>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Welcome Section -->
+            <section class="welcome-section">
+                <h1>Welcome back, John!</h1>
+                <p>Here's what's happening with your courses today.</p>
+            </section>
+
+            <!-- Summary Cards -->
+            <section class="stats-container">
+                <div class="stat-card">
+                    <div class="stat-icon book-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Active Modules</h3>
+                        <p>6</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon assignment-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Pending Assignments</h3>
+                        <p>4</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon gpa-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Current GPA</h3>
+                        <p>3.85</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon credit-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Credits Earned</h3>
+                        <p>84</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Courses Section -->
+            <section class="courses-section">
+                <h2 class="section-title">Current Courses</h2>
+                <div class="courses-container">
+                    <div class="course-card">
+                        <div class="course-header">
+                            <div class="course-icon">P</div>
+                            <div class="course-info">
+                                <h3>Python Class</h3>
+                                <p>Prof. Sarah Johnson</p>
+                            </div>
+                        </div>
+                        <div class="progress-container">
+                            <div class="progress-label">
+                                <span>Progress</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 75%; background-color: #3498db;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-header">
+                            <div class="course-icon">D</div>
+                            <div class="course-info">
+                                <h3>Data Structures</h3>
+                                <p>Prof. Michael Chen</p>
+                            </div>
+                        </div>
+                        <div class="progress-container">
+                            <div class="progress-label">
+                                <span>Progress</span>
+                                <span>60%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 60%; background-color: #2ecc71;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-header">
+                            <div class="course-icon">A</div>
+                            <div class="course-info">
+                                <h3>Algorithms</h3>
+                                <p>Prof. David Wilson</p>
+                            </div>
+                        </div>
+                        <div class="progress-container">
+                            <div class="progress-label">
+                                <span>Progress</span>
+                                <span>45%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 45%; background-color: #f39c12;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Bottom Sections -->
+            <div class="bottom-sections">
+                <!-- Assignments Section -->
+                <section class="assignments-section">
+                    <h2 class="section-title">Recent Assignments</h2>
+                    <div class="assignments-container">
+                        <div class="assignment-item">
+                            <div class="assignment-info">
+                                <h4>Formative 1</h4>
+                                <p>OCC:SE - Due October 25th</p>
+                            </div>
+                            <div class="assignment-status">Pending</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Events & Actions Section -->
+                <section class="events-actions-section">
+                    <div class="events-container">
+                        <h2 class="section-title">Upcoming Events</h2>
+                        <div class="event-item">
+                            <div class="event-icon"></div>
+                            <div class="event-info">
+                                <h4>Midterm Exam</h4>
+                                <p>October 28th, 2:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="event-item">
+                            <div class="event-icon"></div>
+                            <div class="event-info">
+                                <h4>Study Group</h4>
+                                <p>October 26th, 4:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quick-actions">
+                        <h2 class="section-title">Quick Actions</h2>
+                        <button class="action-button">
+                            <i class="fas fa-user"></i>
+                            <span>Submit Assignment</span>
+                        </button>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

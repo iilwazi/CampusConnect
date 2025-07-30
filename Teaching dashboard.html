@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusConnect - Teaching</title>
+    <link rel="stylesheet" href="Teaching dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Top Navigation -->
+        <div class="top-nav">
+            <div class="site-title">CampusConnect</div>
+            <div class="nav-tabs">
+                <a href="Lecturer dsahboard.html">Dashboard</a>
+                <a href="teaching dashboard.html" class="active">Teaching</a>
+                <a href="gradebook.html">Gradebook</a>
+                <a href="communication.html">Communication</a>
+            </div>
+            <div class="user-profile">
+                <div class="profile-pic">P</div>
+                <button class="logout-btn">Logout</button>
+            </div>
+        </div>
+        
+        <!-- Welcome Section -->
+        <div class="welcome-section">
+            <h1>Your Courses</h1>
+            <p>Manage your teaching materials and classes</p>
+        </div>
+        
+        <!-- Course Management -->
+        <div class="teaching-container">
+            <div class="course-management">
+                <div class="course-card-large">
+                    <div class="course-header">
+                        <div class="course-icon">P</div>
+                        <div class="course-info">
+                            <h2>Python Programming</h2>
+                            <p>CS101 - Semester 1 2023</p>
+                        </div>
+                    </div>
+                    <div class="course-tabs">
+                        <button class="tab-btn active">Materials</button>
+                        <button class="tab-btn">Assignments</button>
+                        <button class="tab-btn">Students</button>
+                        <button class="tab-btn">Settings</button>
+                    </div>
+                    <div class="course-content">
+                        <div class="materials-list">
+                            <div class="material-item">
+                                <h4>Lecture 1 Slides</h4>
+                                <p>Uploaded: Sep 1, 2023</p>
+                                <div class="material-actions">
+                                    <button class="action-btn">Download</button>
+                                    <button class="action-btn">Edit</button>
+                                </div>
+                            </div>
+                            <!-- More material items... -->
+                        </div>
+                        <button class="add-material-btn">+ Add New Material</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="teaching-sidebar">
+                <h3>Quick Actions</h3>
+                <button class="sidebar-btn">Create New Assignment</button>
+                <button class="sidebar-btn">Schedule Class</button>
+                <button class="sidebar-btn">Import Materials</button>
+                
+                <h3>Upcoming Deadlines</h3>
+                <div class="deadline-item">
+                    <h4>Project Submission</h4>
+                    <p>Due: Oct 30, 2023</p>
+                </div>
+                <!-- More deadline items... -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusConnect - Gradebook</title>
+    <link rel="stylesheet" href="Teaching dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Top Navigation -->
+        <div class="top-nav">
+            <div class="site-title">CampusConnect</div>
+            <div class="nav-tabs">
+                <a href="Lecturer dsahboard.html">Dashboard</a>
+                <a href="teaching dashboard.html">Teaching</a>
+                <a href="gradebook.html" class="active">Gradebook</a>
+                <a href="communication.html">Communication</a>
+            </div>
+            <div class="user-profile">
+                <div class="profile-pic">P</div>
+                <button class="logout-btn">Logout</button>
+            </div>
+        </div>
+        
+        <!-- Welcome Section -->
+        <div class="welcome-section">
+            <h1>Gradebook</h1>
+            <p>Manage and submit student grades</p>
+        </div>
+        
+        <!-- Gradebook Content -->
+        <div class="gradebook-container">
+            <div class="course-selector">
+                <select class="course-dropdown">
+                    <option>Python Programming (CS101)</option>
+                    <option>Data Structures (CS201)</option>
+                    <option>Advanced Algorithms (CS301)</option>
+                </select>
+            </div>
+            
+            <div class="gradebook-table-container">
+                <table class="gradebook-table">
+                    <thead>
+                        <tr>
+                            <th>Student</th>
+                            <th>ID</th>
+                            <th>Assignment 1</th>
+                            <th>Assignment 2</th>
+                            <th>Midterm</th>
+                            <th>Final</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Alex Johnson</td>
+                            <td>S1001</td>
+                            <td><input type="text" value="85"></td>
+                            <td><input type="text" value="92"></td>
+                            <td><input type="text" value="88"></td>
+                            <td><input type="text" value=""></td>
+                            <td>87.5</td>
+                        </tr>
+                        <!-- More student rows... -->
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="gradebook-actions">
+                <button class="save-btn">Save Changes</button>
+                <button class="export-btn">Export to CSV</button>
+                <button class="publish-btn">Publish Grades</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
